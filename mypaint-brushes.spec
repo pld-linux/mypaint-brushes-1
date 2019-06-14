@@ -1,14 +1,14 @@
 Summary:	Brushes to be used with the MyPaint library
 Summary(pl.UTF-8):	Pędzle do używania z biblioteką MyPaint
 Name:		mypaint-brushes
-Version:	1.3.0
+Version:	2.0.1
 Release:	1
 # According to Licenses.dep5 the files used for building/installing are GPLv2+
 # but the shipped brush files are CC0
 License:	CC0 v1.0
 Group:		Applications/Graphics
 Source0:	https://github.com/mypaint/mypaint-brushes/archive/v%{version}.tar.gz
-# Source0-md5:	679190d88f67a94db57ac99017f966f5
+# Source0-md5:	dd103b2529b2943b7a129d3d23b2a96f
 URL:		https://github.com/mypaint/mypaint-brushes
 BuildRequires:	autoconf >= 2.62
 BuildRequires:	automake
@@ -59,10 +59,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING Licenses.dep5 Licenses.md NEWS README.md
 %dir %{_datadir}/mypaint-data
-%dir %{_datadir}/mypaint-data/1.0
-%{_datadir}/mypaint-data/1.0/brushes
+%dir %{_datadir}/mypaint-data/2.0
+%{_datadir}/mypaint-data/2.0/brushes
 
 %files devel
 %defattr(644,root,root,755)
 %doc COPYING Licenses.dep5 Licenses.md
-%{_npkgconfigdir}/mypaint-brushes-1.0.pc
+%{_npkgconfigdir}/mypaint-brushes-2.0.pc
