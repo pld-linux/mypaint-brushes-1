@@ -13,6 +13,7 @@ Source0:	https://github.com/mypaint/mypaint-brushes/archive/v%{version}/%{name}-
 URL:		https://github.com/mypaint/mypaint-brushes
 BuildRequires:	autoconf >= 2.62
 BuildRequires:	automake
+Requires:	libmypaint >= 1.3.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
